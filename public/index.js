@@ -4,8 +4,8 @@
 if(`serviceWorker` in navigator){
   window.addEventListener(`load`, () => {
     navigator.serviceWorker.register(`./service-worker.js`)
-    .then((yup) => {
-      console.log(`you've been connected to `, yup)
+    .then((reg) => {
+      console.log(`Service worker here: `, reg)
     })
   })
 }
